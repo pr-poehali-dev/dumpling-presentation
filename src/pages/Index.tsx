@@ -82,23 +82,17 @@ const slides = [
 
 export default function Index() {
   const [current, setCurrent] = useState(0);
-  const [animating, setAnimating] = useState(false);
   const [direction, setDirection] = useState<"next" | "prev">("next");
-  const [visible, setVisible] = useState(true);
+  const [animKey, setAnimKey] = useState(0);
 
   const goTo = useCallback(
     (index: number, dir: "next" | "prev" = "next") => {
-      if (animating || index === current) return;
+      if (index === current) return;
       setDirection(dir);
-      setAnimating(true);
-      setVisible(false);
-      setTimeout(() => {
-        setCurrent(index);
-        setVisible(true);
-        setTimeout(() => setAnimating(false), 500);
-      }, 350);
+      setCurrent(index);
+      setAnimKey(k => k + 1);
     },
-    [animating, current]
+    [current]
   );
 
   const next = useCallback(() => {
@@ -173,13 +167,10 @@ export default function Index() {
 
       {/* Main content */}
       <main
+        key={animKey}
         className="relative z-10 w-full h-full flex items-center"
         style={{
-          opacity: visible ? 1 : 0,
-          transform: visible
-            ? "translateY(0px)"
-            : direction === "next" ? "translateY(28px)" : "translateY(-28px)",
-          transition: "opacity 0.38s ease, transform 0.38s ease",
+          animation: `slideIn${direction === "next" ? "Up" : "Down"} 0.3s ease forwards`,
         }}
       >
         {/* SLIDE 1 — HERO */}
