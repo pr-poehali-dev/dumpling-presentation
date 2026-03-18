@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback } from "react";
 import Icon from "@/components/ui/icon";
 
-const IMG_PELMENI = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/666393dd-b804-4bc2-aafd-2efb9953de63.jpg";
-const IMG_INGREDIENTS = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/f99a4440-e99b-45e5-9fd7-b45beb8ca6f9.jpg";
-const IMG_SERVING = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/6509c17f-4c69-4c8d-bb8d-7835cdd6050c.jpg";
+const IMG_PELMENI = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/7eebc438-c632-4fac-909e-102e5e64bd2d.jpg";
+const IMG_INGREDIENTS = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/9fee74f2-d88c-4ff0-a3a2-32fd9daf638d.jpg";
+const IMG_SERVING = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/f2008c1d-1cba-42b9-9971-365a5c34b742.jpg";
 const IMG_LOGO = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/bucket/deb1091c-1489-4682-8acf-908e4b2b0e0b.png";
 
 const slides = [
