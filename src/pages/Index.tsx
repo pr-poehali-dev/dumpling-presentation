@@ -154,10 +154,10 @@ export default function Index() {
         <div className="flex items-center gap-3">
           <span style={{ color: "#ff6b00", fontSize: "1.25rem" }}>●</span>
           <span
-            className="text-white opacity-80 tracking-widest uppercase text-base"
-            style={{ fontFamily: "'Oswald', sans-serif", letterSpacing: "0.2em" }}
+            className="text-white tracking-widest uppercase"
+            style={{ fontFamily: "'Oswald', sans-serif", letterSpacing: "0.2em", fontSize: "1.35rem", fontWeight: 700 }}
           >
-            Пельмени
+            Бульмени
           </span>
         </div>
         <div className="text-white text-sm tracking-widest" style={{ opacity: 0.35 }}>
@@ -210,13 +210,23 @@ export default function Index() {
                 <span className="text-white text-sm" style={{ opacity: 0.35 }}>Листайте вниз</span>
               </div>
             </div>
-            <div className="flex-1 relative overflow-hidden">
-              <img
-                src={slide.image}
-                alt="Пельмени"
-                className="absolute inset-0 w-full h-full object-cover"
-                style={{ maskImage: "linear-gradient(to right, transparent 0%, black 35%)" }}
-              />
+            <div className="flex-1 relative flex items-center justify-center overflow-hidden">
+              <div
+                style={{
+                  width: "clamp(320px, 38vw, 560px)",
+                  height: "clamp(320px, 38vw, 560px)",
+                  borderRadius: "50%",
+                  overflow: "hidden",
+                  boxShadow: "0 0 80px rgba(255,107,0,0.35), 0 0 0 3px rgba(255,107,0,0.25)",
+                  flexShrink: 0,
+                }}
+              >
+                <img
+                  src={slide.image}
+                  alt="Пельмени"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }}
+                />
+              </div>
               <div
                 className="absolute bottom-16 right-12 text-right pointer-events-none"
                 style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 900, fontSize: "clamp(5rem, 14vw, 16rem)", lineHeight: 1, color: "#ff6b00", opacity: 0.12 }}
@@ -230,13 +240,23 @@ export default function Index() {
         {/* SLIDE 2 — FEATURE */}
         {slide.type === "feature" && (
           <div className="w-full h-full flex">
-            <div className="w-1/2 relative overflow-hidden">
-              <img
-                src={slide.image}
-                alt="Ингредиенты"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="absolute inset-0" style={{ background: "linear-gradient(to right, transparent 40%, #0d0d0d)" }} />
+            <div className="w-1/2 relative flex items-center justify-center overflow-hidden">
+              <div
+                style={{
+                  width: "clamp(280px, 32vw, 480px)",
+                  height: "clamp(280px, 32vw, 480px)",
+                  borderRadius: "50%",
+                  overflow: "hidden",
+                  boxShadow: "0 0 80px rgba(255,107,0,0.35), 0 0 0 3px rgba(255,107,0,0.25)",
+                  flexShrink: 0,
+                }}
+              >
+                <img
+                  src={slide.image}
+                  alt="Ингредиенты"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }}
+                />
+              </div>
             </div>
             <div className="w-1/2 flex flex-col justify-center pr-16 pl-8">
               <div className="flex items-center gap-2 mb-6">
@@ -312,13 +332,23 @@ export default function Index() {
                 </div>
               )}
             </div>
-            <div className="flex-1 relative overflow-hidden">
-              <img
-                src={slide.image}
-                alt="Подача"
-                className="absolute inset-0 w-full h-full object-cover"
-                style={{ maskImage: "linear-gradient(to right, transparent 0%, black 35%)" }}
-              />
+            <div className="flex-1 relative flex items-center justify-center overflow-hidden">
+              <div
+                style={{
+                  width: "clamp(280px, 35vw, 520px)",
+                  height: "clamp(280px, 35vw, 520px)",
+                  borderRadius: "50%",
+                  overflow: "hidden",
+                  boxShadow: "0 0 80px rgba(255,107,0,0.35), 0 0 0 3px rgba(255,107,0,0.25)",
+                  flexShrink: 0,
+                }}
+              >
+                <img
+                  src={slide.image}
+                  alt="Подача"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }}
+                />
+              </div>
             </div>
           </div>
         )}
