@@ -14,7 +14,7 @@ const slides = [
     subtitle: "Вкус, который узнаёшь с первой ложки",
     type: "hero",
     image: IMG_PELMENI,
-    bg: "from-[#1a0a00] to-[#2d1200]",
+    bg: "from-[#1a0005] to-[#3d0010]",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const slides = [
     subtitle: "Каждый пельмень — это частичка старания. Отборный фарш, нежное тесто без изъяна — только так, и никак иначе.",
     type: "feature",
     image: IMG_INGREDIENTS,
-    bg: "from-[#0d0d0d] to-[#1a1a0a]",
+    bg: "from-[#1a0008] to-[#2d000e]",
     stats: [
       { value: "100%", label: "Натуральный фарш" },
       { value: "≤2мм", label: "Толщина теста" },
@@ -37,7 +37,7 @@ const slides = [
     subtitle: "Аромат такой — аж дух мятежный! Сытный обед, отличный итог.",
     type: "taste",
     image: IMG_SERVING,
-    bg: "from-[#0a0a1a] to-[#1a0a00]",
+    bg: "from-[#200008] to-[#3a0012]",
     sauces: ["Сметана", "Зелень", "Уксус", "Горчица"],
   },
   {
@@ -46,7 +46,7 @@ const slides = [
     title: "Готово\nза минуты",
     subtitle: "Быстро сварить — совсем несложно. Миг — и блюдо уже возможно.",
     type: "quick",
-    bg: "from-[#0d0800] to-[#1a0d00]",
+    bg: "from-[#25000a] to-[#3d0015]",
     steps: [
       { icon: "Droplets", text: "Вскипятите воду", num: "01" },
       { icon: "Flame", text: "Забросьте пельмени", num: "02" },
@@ -60,7 +60,7 @@ const slides = [
     title: "Для семьи,\nдрузей,\nпраздника",
     subtitle: "Завтрак, ужин, обед любой — станут радостью они живой.",
     type: "family",
-    bg: "from-[#0a1200] to-[#1a0800]",
+    bg: "from-[#1a000a] to-[#320010]",
     occasions: [
       { emoji: "🏠", label: "Каждый день" },
       { emoji: "🎉", label: "Праздник" },
@@ -76,7 +76,7 @@ const slides = [
     title: "Выбирай\nлучшее.\nНе зевай.",
     subtitle: "Натуральные ингредиенты, честный рецепт. Качество — вот наш завет.",
     type: "cta",
-    bg: "from-[#1a0500] to-[#0d0000]",
+    bg: "from-[#2d0010] to-[#1a0008]",
     cta: "Попробовать сейчас",
   },
 ];
@@ -137,7 +137,7 @@ export default function Index() {
         className="absolute rounded-full blur-3xl pointer-events-none"
         style={{
           width: "45vw", height: "45vw",
-          background: "radial-gradient(circle, rgba(255,107,0,0.25) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(200,16,46,0.4) 0%, transparent 70%)",
           top: "-10vw", right: "-10vw",
         }}
       />
@@ -145,7 +145,7 @@ export default function Index() {
         className="absolute rounded-full blur-3xl pointer-events-none"
         style={{
           width: "25vw", height: "25vw",
-          background: "radial-gradient(circle, rgba(255,170,0,0.12) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(245,200,0,0.15) 0%, transparent 70%)",
           bottom: "5vw", left: "5vw",
         }}
       />
@@ -175,8 +175,8 @@ export default function Index() {
           <div className="w-full h-full flex">
             <div className="flex-1 flex flex-col justify-center pl-16 pr-8 z-10">
               <div className="flex items-center gap-2 mb-6">
-                <div style={{ width: "2rem", height: "1px", background: "#ff6b00" }} />
-                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#ff6b00", letterSpacing: "0.3em" }}>
+                <div style={{ width: "2rem", height: "1px", background: "#f5c800" }} />
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#f5c800", letterSpacing: "0.3em" }}>
                   {slide.tag}
                 </span>
               </div>
@@ -200,7 +200,7 @@ export default function Index() {
               <div className="flex items-center gap-3 mt-10">
                 <div
                   className="w-12 h-12 rounded-full flex items-center justify-center"
-                  style={{ background: "#ff6b00" }}
+                  style={{ background: "#f5c800" }}
                 >
                   <Icon name="ChevronDown" size={20} className="text-white" />
                 </div>
@@ -216,7 +216,7 @@ export default function Index() {
               />
               <div
                 className="absolute bottom-16 right-12 text-right pointer-events-none"
-                style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 900, fontSize: "clamp(5rem, 14vw, 16rem)", lineHeight: 1, color: "#ff6b00", opacity: 0.12 }}
+                style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 900, fontSize: "clamp(5rem, 14vw, 16rem)", lineHeight: 1, color: "#f5c800", opacity: 0.12 }}
               >
                 №1
               </div>
@@ -237,8 +237,8 @@ export default function Index() {
             </div>
             <div className="w-1/2 flex flex-col justify-center pr-16 pl-8">
               <div className="flex items-center gap-2 mb-6">
-                <div style={{ width: "2rem", height: "1px", background: "#ff6b00" }} />
-                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#ff6b00", letterSpacing: "0.3em" }}>
+                <div style={{ width: "2rem", height: "1px", background: "#f5c800" }} />
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#f5c800", letterSpacing: "0.3em" }}>
                   {slide.tag}
                 </span>
               </div>
@@ -258,7 +258,7 @@ export default function Index() {
                   {slide.stats.map((s, i) => (
                     <div key={i}>
                       <div
-                        style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700, color: "#ff6b00", fontSize: "1.75rem" }}
+                        style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700, color: "#f5c800", fontSize: "1.75rem" }}
                       >{s.value}</div>
                       <div className="text-white text-xs mt-1" style={{ opacity: 0.35 }}>{s.label}</div>
                     </div>
@@ -274,8 +274,8 @@ export default function Index() {
           <div className="w-full h-full flex">
             <div className="flex-1 flex flex-col justify-center pl-16 pr-8 z-10">
               <div className="flex items-center gap-2 mb-6">
-                <div style={{ width: "2rem", height: "1px", background: "#ff6b00" }} />
-                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#ff6b00", letterSpacing: "0.3em" }}>
+                <div style={{ width: "2rem", height: "1px", background: "#f5c800" }} />
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#f5c800", letterSpacing: "0.3em" }}>
                   {slide.tag}
                 </span>
               </div>
@@ -300,7 +300,7 @@ export default function Index() {
                       <span
                         key={i}
                         className="px-4 py-2 text-sm font-medium rounded-full"
-                        style={{ border: "1px solid rgba(255,107,0,0.4)", color: "#ff6b00" }}
+                        style={{ border: "1px solid rgba(245,200,0,0.4)", color: "#f5c800" }}
                       >
                         {s}
                       </span>
@@ -324,8 +324,8 @@ export default function Index() {
         {slide.type === "quick" && (
           <div className="w-full h-full flex flex-col justify-center px-16">
             <div className="flex items-center gap-2 mb-6">
-              <div style={{ width: "2rem", height: "1px", background: "#ff6b00" }} />
-              <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#ff6b00", letterSpacing: "0.3em" }}>
+              <div style={{ width: "2rem", height: "1px", background: "#f5c800" }} />
+              <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#f5c800", letterSpacing: "0.3em" }}>
                 {slide.tag}
               </span>
             </div>
@@ -351,9 +351,9 @@ export default function Index() {
                   <div className="relative z-10">
                     <div
                       className="w-12 h-12 rounded-xl flex items-center justify-center mb-4"
-                      style={{ background: "rgba(255,107,0,0.12)", border: "1px solid rgba(255,107,0,0.3)" }}
+                      style={{ background: "rgba(245,200,0,0.12)", border: "1px solid rgba(245,200,0,0.3)" }}
                     >
-                      <Icon name={step.icon} size={20} style={{ color: "#ff6b00" }} />
+                      <Icon name={step.icon} size={20} style={{ color: "#f5c800" }} />
                     </div>
                     <p className="text-white font-medium text-base">{step.text}</p>
                   </div>
@@ -377,8 +377,8 @@ export default function Index() {
         {slide.type === "family" && (
           <div className="w-full h-full flex flex-col justify-center px-16">
             <div className="flex items-center gap-2 mb-6">
-              <div style={{ width: "2rem", height: "1px", background: "#ff6b00" }} />
-              <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#ff6b00", letterSpacing: "0.3em" }}>
+              <div style={{ width: "2rem", height: "1px", background: "#f5c800" }} />
+              <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#f5c800", letterSpacing: "0.3em" }}>
                 {slide.tag}
               </span>
             </div>
@@ -412,18 +412,18 @@ export default function Index() {
         {slide.type === "cta" && (
           <div className="w-full h-full flex flex-col justify-center items-center text-center px-16">
             <div className="flex items-center gap-2 mb-6">
-              <div style={{ width: "2rem", height: "1px", background: "#ff6b00" }} />
-              <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#ff6b00", letterSpacing: "0.3em" }}>
+              <div style={{ width: "2rem", height: "1px", background: "#f5c800" }} />
+              <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#f5c800", letterSpacing: "0.3em" }}>
                 {slide.tag}
               </span>
-              <div style={{ width: "2rem", height: "1px", background: "#ff6b00" }} />
+              <div style={{ width: "2rem", height: "1px", background: "#f5c800" }} />
             </div>
             <h2
               className="leading-tight mb-6"
               style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700, fontSize: "clamp(3rem, 7vw, 8rem)" }}
             >
               {slide.title.split("\n").map((line, i) => (
-                <span key={i} className="block" style={{ color: i === 2 ? "#ff6b00" : "white" }}>
+                <span key={i} className="block" style={{ color: i === 2 ? "#f5c800" : "white" }}>
                   {line}
                 </span>
               ))}
@@ -432,13 +432,14 @@ export default function Index() {
               {slide.subtitle}
             </p>
             <button
-              className="px-12 py-5 rounded-full text-white font-bold text-lg transition-all duration-300"
+              className="px-12 py-5 rounded-full font-bold text-lg transition-all duration-300"
               style={{
-                background: "#ff6b00",
-                boxShadow: "0 0 40px rgba(255,107,0,0.35)",
+                color: "#1a0008",
+                background: "#f5c800",
+                boxShadow: "0 0 40px rgba(245,200,0,0.35)",
               }}
-              onMouseEnter={e => { (e.target as HTMLElement).style.background = "#ff8c00"; (e.target as HTMLElement).style.transform = "scale(1.05)"; }}
-              onMouseLeave={e => { (e.target as HTMLElement).style.background = "#ff6b00"; (e.target as HTMLElement).style.transform = "scale(1)"; }}
+              onMouseEnter={e => { (e.target as HTMLElement).style.background = "#e6b800"; (e.target as HTMLElement).style.transform = "scale(1.05)"; }}
+              onMouseLeave={e => { (e.target as HTMLElement).style.background = "#f5c800"; (e.target as HTMLElement).style.transform = "scale(1)"; }}
             >
               {slide.cta}
             </button>
@@ -449,7 +450,7 @@ export default function Index() {
                 { icon: "Heart", text: "Уют и тепло" },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2">
-                  <Icon name={item.icon} size={16} style={{ color: "#ff6b00" }} />
+                  <Icon name={item.icon} size={16} style={{ color: "#f5c800" }} />
                   <span className="text-white text-sm" style={{ opacity: 0.35 }}>{item.text}</span>
                 </div>
               ))}
@@ -469,7 +470,7 @@ export default function Index() {
                 width: i === current ? "2rem" : "0.5rem",
                 height: "0.5rem",
                 borderRadius: "9999px",
-                background: i === current ? "#ff6b00" : "rgba(255,255,255,0.2)",
+                background: i === current ? "#f5c800" : "rgba(255,255,255,0.2)",
                 transition: "all 0.3s ease",
                 border: "none",
                 cursor: "pointer",
@@ -495,15 +496,16 @@ export default function Index() {
           <button
             onClick={next}
             disabled={current === slides.length - 1}
-            className="w-12 h-12 rounded-full flex items-center justify-center text-white transition-all duration-200"
+            className="w-12 h-12 rounded-full flex items-center justify-center transition-all duration-200"
             style={{
-              background: current === slides.length - 1 ? "rgba(255,107,0,0.3)" : "#ff6b00",
+              background: current === slides.length - 1 ? "rgba(245,200,0,0.3)" : "#f5c800",
+              color: "#1a0008",
               border: "none",
               opacity: current === slides.length - 1 ? 0.3 : 1,
               cursor: current === slides.length - 1 ? "not-allowed" : "pointer",
             }}
           >
-            <Icon name="ChevronRight" size={20} className="text-white" />
+            <Icon name="ChevronRight" size={20} />
           </button>
         </div>
       </nav>
