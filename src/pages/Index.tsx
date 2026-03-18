@@ -10,7 +10,7 @@ const slides = [
   {
     id: 1,
     tag: "ВЫСШИЙ КЛАСС",
-    title: "Пельмени,\nкоторые\nпорадуют",
+    title: "Бульмени,\nкоторые\nпорадуют",
     subtitle: "Вкус, который узнаёшь с первой ложки",
     type: "hero",
     image: IMG_PELMENI,
@@ -206,7 +206,7 @@ export default function Index() {
             <div className="flex-1 relative overflow-hidden">
               <img
                 src={slide.image}
-                alt="Пельмени"
+                alt="Бульмени"
                 className="absolute inset-0 w-full h-full object-cover"
                 style={{ maskImage: "linear-gradient(to right, transparent 0%, black 35%)" }}
               />
