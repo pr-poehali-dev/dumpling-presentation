@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback } from "react";
 import Icon from "@/components/ui/icon";
 
-const IMG_PELMENI = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/00f6a2b6-cde5-4414-899e-a4d026a77706.jpg";
-const IMG_INGREDIENTS = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/9bbea5a0-150f-4ac0-91c9-ec826b684c6c.jpg";
-const IMG_SERVING = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/69b4c823-e12d-4ce9-8f8f-3f1e9dc4dda2.jpg";
+const IMG_PELMENI = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/be72700a-5cb8-40aa-8234-545891546974.jpg";
+const IMG_INGREDIENTS = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/c763c389-214e-40fd-bf94-0035c1f40f78.jpg";
+const IMG_SERVING = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/ddba11db-e62d-4a0e-8119-13cfd94df47e.jpg";
 
 const slides = [
   {
