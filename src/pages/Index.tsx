@@ -1,9 +1,10 @@
 import { useState, useEffect, useCallback } from "react";
 import Icon from "@/components/ui/icon";
 
-const IMG_PELMENI = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/be72700a-5cb8-40aa-8234-545891546974.jpg";
-const IMG_INGREDIENTS = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/c763c389-214e-40fd-bf94-0035c1f40f78.jpg";
-const IMG_SERVING = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/ddba11db-e62d-4a0e-8119-13cfd94df47e.jpg";
+const IMG_PELMENI = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/666393dd-b804-4bc2-aafd-2efb9953de63.jpg";
+const IMG_INGREDIENTS = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/f99a4440-e99b-45e5-9fd7-b45beb8ca6f9.jpg";
+const IMG_SERVING = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/files/6509c17f-4c69-4c8d-bb8d-7835cdd6050c.jpg";
+const IMG_LOGO = "https://cdn.poehali.dev/projects/c803593f-2204-45bb-b904-874e26df13fa/bucket/deb1091c-1489-4682-8acf-908e4b2b0e0b.png";
 
 const slides = [
   {
@@ -150,16 +151,12 @@ export default function Index() {
       />
 
       {/* Header */}
-      <header className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-10 pt-8">
-        <div className="flex items-center gap-3">
-          <span style={{ color: "#ff6b00", fontSize: "1.25rem" }}>●</span>
-          <span
-            className="text-white opacity-80 tracking-widest uppercase text-base"
-            style={{ fontFamily: "'Oswald', sans-serif", letterSpacing: "0.2em" }}
-          >
-            Пельмени
-          </span>
-        </div>
+      <header className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-10 pt-6">
+        <img
+          src={IMG_LOGO}
+          alt="Бульмени"
+          style={{ height: "72px", objectFit: "contain", filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.5))" }}
+        />
         <div className="text-white text-sm tracking-widest" style={{ opacity: 0.35 }}>
           {String(current + 1).padStart(2, "0")} / {String(slides.length).padStart(2, "0")}
         </div>
