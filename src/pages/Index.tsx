@@ -152,11 +152,7 @@ export default function Index() {
 
       {/* Header */}
       <header className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-10 pt-6">
-        <img
-          src={IMG_LOGO}
-          alt="Бульмени"
-          style={{ height: "72px", objectFit: "contain", filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.5))" }}
-        />
+        <div />
         <div className="text-white text-sm tracking-widest" style={{ opacity: 0.35 }}>
           {String(current + 1).padStart(2, "0")} / {String(slides.length).padStart(2, "0")}
         </div>
